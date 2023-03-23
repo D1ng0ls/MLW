@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Aula 1</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="text"><img src="https://preview.redd.it/78y6nq4wmnr71.jpg?width=567&format=pjpg&auto=webp&s=ab17b6b9a666d26c91fb8daecc32ba4d3a0b5073" alt=""></h1>
+        <input type="range" name="range" id="range" max="100", min="1" value="1" oninput="muda()">
+        <button onclick="pause()" id="button">Pausar</button>
+    </div>
+</body>
+</html>
+
+<script>
+    function muda() {
+        var speed = document.getElementById('range').value;
+        var speed = (speed) + "s"
+        var text = document.getElementById('text');
+        text.style.animationDuration = speed;
+    }
+    function pause() {
+        var text = document.getElementById('text');
+        text.classList.toggle("pause");
+    }
+</script>
