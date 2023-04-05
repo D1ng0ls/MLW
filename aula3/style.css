@@ -1,0 +1,17 @@
+body {
+    background-image: url(https://images.all-free-download.com/images/graphiclarge/esporte_clube_corinthians_de_laguna_sc_124483.jpg);
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    overflow-X: hidden;
+}
+
+div {
+    padding-bottom: 500px;
+}
+
+.texto input {
+    background-color: red;
+}

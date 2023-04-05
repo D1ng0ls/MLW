@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cortinas</title>
+</head>
+<body>
+    <div class="menu">
+        <h3>menu</h3>
+        <ul>
+            <li><a href="#titulo">titulos</a></li>
+            <li><a href="#time">jogadores caros</a></li>
+            <li><a href="#texto">insiratextoaqui</a></li>
+        </ul>
+    </div>
+    <div class="titulos" id="titulo">
+        <h3>titulos do cortinas</h3>
+        <a href="https://www.corinthians.com.br/clube/titulos">https://www.corinthians.com.br/clube/titulos</a>
+    </div>
+    <div class="time" id="time">
+        <h3>tiems fods</h3>
+        <img src="https://static.corinthians.com.br/uploads/5ba21ddbbf5db0c47a1450e710b13bee.jpg" alt="">
+    </div>
+    <div class="texto">
+        <h3>TExto agui</h3>
+        <input type="text" id="texto">
+        <button onclick="escreve()">botao</button>
+    </div>
+</body>
+<script>
+    function escreve() {
+        alert(document.getElementById('texto').value)
+    }
+</script>
+</html>
